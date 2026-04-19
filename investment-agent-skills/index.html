@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="投资 Agent Skill 目录，为投资研究、价值判断与股票尽调 agent 准备的 skill 下载目录。">
+    <title>投资 Agent Skill 目录</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "投资 Agent Skill 目录",
+        "description": "为投资研究、价值判断与股票尽调 agent 准备的 skill 下载目录。",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "position": 1,
+            "name": "buffett-perspective-main",
+            "alternateName": "巴菲特视角",
+            "description": "用于用巴菲特式长期主义、护城河、所有者收益、安全边际和资本配置框架审视企业、股票、收购、组织和职业选择。",
+            "downloadUrl": "http://files.dean.wiki/buffett-perspective-main_1776571737550.zip",
+            "image": "assets/buffett.jpeg",
+            "applicationCategory": "AgentSkill"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "name": "munger-skill-main",
+            "alternateName": "芒格",
+            "description": "用于逆向思考、认知偏误检查、跨学科模型、激励结构分析、Lollapalooza 效应和投资/商业决策审视。",
+            "downloadUrl": "http://files.dean.wiki/munger-skill-main_1776571765058.zip",
+            "image": "assets/munger.jpeg",
+            "applicationCategory": "AgentSkill"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "name": "stock-due-diligence",
+            "alternateName": "股票尽调",
+            "description": "用于公开上市公司尽调，覆盖官方文件、财务趋势、现金流、股息质量、PV/NPV 估值、250 日均线技术过滤和地缘政治情景分析。",
+            "downloadUrl": "http://files.dean.wiki/stock-due-diligence_1776571783358.zip",
+            "image": "assets/stock-due-diligence.png",
+            "applicationCategory": "AgentSkill"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 4,
+            "name": "lovermore",
+            "alternateName": "lovermore",
+            "description": "待添加",
+            "image": "assets/lovermore.jpeg",
+            "applicationCategory": "AgentSkill"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 5,
+            "name": "Minervini",
+            "alternateName": "Minervini",
+            "description": "待添加",
+            "image": "assets/Minervini.jpeg",
+            "applicationCategory": "AgentSkill"
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --ink: #111111;
+        --muted: #5f5f5f;
+        --line: #e5e5e5;
+        --soft: #fafafa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: clamp(36px, 7vw, 86px) 0;
+      }
+
+      header {
+        max-width: 720px;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(40px, 7vw, 72px);
+        font-weight: 720;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin: 20px 0 0;
+        color: var(--muted);
+        font-size: clamp(17px, 2vw, 20px);
+      }
+
+      .updated-at {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .note {
+        display: grid;
+        gap: 10px;
+        max-width: 860px;
+        margin: 0 0 42px;
+        padding: 22px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .note p {
+        margin: 0;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      article {
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--bg);
+      }
+
+      article img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 16px;
+        padding: 22px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .slug,
+      .download,
+      .case-button {
+        font-family: "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+      }
+
+      .slug {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        overflow-wrap: anywhere;
+      }
+
+      .summary {
+        margin: 0;
+        color: #282828;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: auto;
+      }
+
+      .download,
+      .case-button {
+        display: inline-flex;
+        width: fit-content;
+        min-height: 38px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 13px;
+        border: 1px solid var(--ink);
+        border-radius: 8px;
+        background: var(--ink);
+        color: #ffffff;
+        font-size: 13px;
+      }
+
+      .case-button {
+        background: #ffffff;
+        color: var(--ink);
+      }
+
+      .download:hover {
+        background: #ffffff;
+        color: var(--ink);
+      }
+
+      .case-button:hover {
+        background: var(--ink);
+        color: #ffffff;
+      }
+
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        display: none;
+        padding: 24px;
+        place-items: center;
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(10px);
+      }
+
+      .modal:target {
+        display: grid;
+      }
+
+      .modal-panel {
+        width: min(560px, 100%);
+        max-height: min(72vh, 560px);
+        overflow: auto;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.14);
+      }
+
+      .modal-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+
+      .modal h2,
+      .modal h3 {
+        margin: 0;
+        letter-spacing: 0;
+      }
+
+      .modal h2 {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      .modal h3 {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .modal-close {
+        display: inline-flex;
+        min-width: 32px;
+        min-height: 32px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--muted);
+      }
+
+      .modal-close:hover {
+        color: var(--ink);
+      }
+
+      .modal ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+      }
+
+      .modal li + li {
+        margin-top: 8px;
+      }
+
+      .modal p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      @media (max-width: 900px) {
+        .skills {
+          grid-template-columns: 1fr;
+        }
+
+        article {
+          display: grid;
+          grid-template-columns: 180px 1fr;
+        }
+
+        article img {
+          height: 100%;
+          min-height: 220px;
+          border-right: 1px solid var(--line);
+          border-bottom: 0;
+          aspect-ratio: auto;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          width: min(100% - 28px, 1080px);
+          padding: 34px 0;
+        }
+
+        article {
+          display: flex;
+        }
+
+        article img {
+          height: auto;
+          min-height: 0;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          aspect-ratio: 4 / 3;
+        }
+
+        .content,
+        .modal-panel {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>投资 Agent Skill 目录</h1>
+        <p class="subtitle">为投资研究、价值判断与股票尽调 agent 准备的 skill 下载目录。</p>
+        <p class="updated-at">更新日期：2026-04-19 13:02 +08</p>
+      </header>
+
+      <main>
+        <section class="note" aria-label="使用方法与 Agent 指令">
+          <p><strong>使用方法：</strong>将这个页面或其中的下载链接发给你的 agent，让它下载对应 zip，并放到它的 skill 目录中。</p>
+          <p><strong>Agent:</strong> 这是一个投资 agent skill 的目录。请读取 skill 名称、适用场景和下载链接，下载需要的 zip 文件并安装到你的 skills 目录。</p>
+        </section>
+
+        <section id="skills" class="skills" aria-label="Skill 列表">
+          <article>
+            <img src="assets/buffett.jpeg" alt="巴菲特视角 skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>巴菲特视角</h2>
+                <p class="slug">buffett-perspective-main</p>
+              </div>
+              <p class="summary">用于用巴菲特式长期主义、护城河、所有者收益、安全边际和资本配置框架审视企业、股票、收购、组织和职业选择。</p>
+              <div class="actions">
+                <a class="download" href="http://files.dean.wiki/buffett-perspective-main_1776571737550.zip">下载</a>
+                <a class="case-button" href="#case-buffett">场景用例</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="assets/munger.jpeg" alt="芒格 skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>芒格</h2>
+                <p class="slug">munger-skill-main</p>
+              </div>
+              <p class="summary">用于逆向思考、认知偏误检查、跨学科模型、激励结构分析、Lollapalooza 效应和投资/商业决策审视。</p>
+              <div class="actions">
+                <a class="download" href="http://files.dean.wiki/munger-skill-main_1776571765058.zip">下载</a>
+                <a class="case-button" href="#case-munger">场景用例</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="assets/stock-due-diligence.png" alt="股票尽调 skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>股票尽调</h2>
+                <p class="slug">stock-due-diligence</p>
+              </div>
+              <p class="summary">用于公开上市公司尽调，覆盖官方文件、财务趋势、现金流、股息质量、PV/NPV 估值、250 日均线技术过滤和地缘政治情景分析。</p>
+              <div class="actions">
+                <a class="download" href="http://files.dean.wiki/stock-due-diligence_1776571783358.zip">下载</a>
+                <a class="case-button" href="#case-stock">场景用例</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="assets/lovermore.jpeg" alt="lovermore skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>lovermore</h2>
+                <p class="slug">待添加</p>
+              </div>
+              <p class="summary">待添加</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="assets/Minervini.jpeg" alt="Minervini skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>Minervini</h2>
+                <p class="slug">待添加</p>
+              </div>
+              <p class="summary">待添加</p>
+            </div>
+          </article>
+        </section>
+
+        <section id="case-buffett" class="modal" aria-labelledby="case-buffett-title">
+          <div class="modal-panel">
+            <div class="modal-head">
+              <h2 id="case-buffett-title">巴菲特视角：场景用例</h2>
+              <a class="modal-close" href="#skills" aria-label="关闭">×</a>
+            </div>
+            <h3>适合场景</h3>
+            <ul>
+              <li>判断公司是否是好生意，护城河是否持久。</li>
+              <li>审视所有者收益、资本配置、安全边际。</li>
+              <li>用长期复利框架看收购、组织和职业选择。</li>
+            </ul>
+            <h3>用户可以这样问</h3>
+            <ul>
+              <li>用巴菲特视角看这家公司是否值得继续研究。</li>
+              <li>帮我判断它的护城河、所有者收益和安全边际。</li>
+              <li>这笔收购或职业选择有没有长期复利？</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="case-munger" class="modal" aria-labelledby="case-munger-title">
+          <div class="modal-panel">
+            <div class="modal-head">
+              <h2 id="case-munger-title">芒格：场景用例</h2>
+              <a class="modal-close" href="#skills" aria-label="关闭">×</a>
+            </div>
+            <h3>适合场景</h3>
+            <ul>
+              <li>逆向思考：先找失败、亏钱和犯错路径。</li>
+              <li>检查认知偏误、激励错位和能力圈边界。</li>
+              <li>识别多个偏误叠加的 Lollapalooza 风险。</li>
+            </ul>
+            <h3>用户可以这样问</h3>
+            <ul>
+              <li>用芒格视角逆向分析这个投资为什么会亏。</li>
+              <li>这个决策里有哪些认知偏误和激励错位？</li>
+              <li>这件事是否超出我的能力圈？</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="case-stock" class="modal" aria-labelledby="case-stock-title">
+          <div class="modal-panel">
+            <div class="modal-head">
+              <h2 id="case-stock-title">股票尽调：场景用例</h2>
+              <a class="modal-close" href="#skills" aria-label="关闭">×</a>
+            </div>
+            <h3>适合场景</h3>
+            <ul>
+              <li>做上市公司公开资料尽调和初学者检查清单。</li>
+              <li>分析财务趋势、现金流、股息质量和资产负债风险。</li>
+              <li>建立 PV/NPV 估值、250 日均线过滤和地缘政治情景。</li>
+            </ul>
+            <h3>用户可以这样问</h3>
+            <ul>
+              <li>对这只股票做一份初学者可读的尽调报告。</li>
+              <li>检查它的现金流、股息质量和估值是否健康。</li>
+              <li>用 NPV、250 日均线和地缘政治情景重新评估它。</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
