@@ -39,13 +39,23 @@
             "name": "stock-due-diligence",
             "alternateName": "股票尽调",
             "description": "用于公开上市公司尽调，覆盖官方文件、财务趋势、现金流、股息质量、PV/NPV 估值、250 日均线技术过滤和地缘政治情景分析。",
-            "downloadUrl": "http://files.dean.wiki/stock-due-diligence_1776571783358.zip",
+            "downloadUrl": "http://files.dean.wiki/stock-due-diligence_1776582979609.zip",
             "image": "investment-agent-skills/assets/stock-due-diligence.png",
             "applicationCategory": "AgentSkill"
           },
           {
             "@type": "SoftwareApplication",
             "position": 4,
+            "name": "trading-hub",
+            "alternateName": "trading hub (crypto视角)",
+            "description": "用于 crypto 市场快照、快速报价、多周期技术分析、ETF 资金与持仓情报，以及 pair rotation / arbitrage 回测。",
+            "downloadUrl": "http://files.dean.wiki/trading-hub_1776581932024.zip",
+            "image": "investment-agent-skills/assets/trading-hub.png",
+            "applicationCategory": "AgentSkill"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 5,
             "name": "lovermore",
             "alternateName": "lovermore",
             "description": "待添加",
@@ -54,7 +64,7 @@
           },
           {
             "@type": "SoftwareApplication",
-            "position": 5,
+            "position": 6,
             "name": "Minervini",
             "alternateName": "Minervini",
             "description": "待添加",
@@ -360,7 +370,7 @@
       <header>
         <h1>投资 Agent Skill 目录</h1>
         <p class="subtitle">为投资研究、价值判断与股票尽调 agent 准备的 skill 下载目录。</p>
-        <p class="updated-at">更新日期：2026-04-19 13:02 +08</p>
+        <p class="updated-at">更新日期：2026-04-19 15:11 +08</p>
       </header>
 
       <main>
@@ -409,8 +419,23 @@
               </div>
               <p class="summary">用于公开上市公司尽调，覆盖官方文件、财务趋势、现金流、股息质量、PV/NPV 估值、250 日均线技术过滤和地缘政治情景分析。</p>
               <div class="actions">
-                <a class="download" href="http://files.dean.wiki/stock-due-diligence_1776571783358.zip">下载</a>
+                <a class="download" href="http://files.dean.wiki/stock-due-diligence_1776582979609.zip">下载</a>
                 <a class="case-button" href="#case-stock">场景用例</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="investment-agent-skills/assets/trading-hub.png" alt="trading hub crypto 视角 skill 配图" loading="lazy" decoding="async">
+            <div class="content">
+              <div>
+                <h2>trading hub (crypto视角)</h2>
+                <p class="slug">trading-hub</p>
+              </div>
+              <p class="summary">用于 crypto 市场快照、快速报价、多周期技术分析、ETF 资金与持仓情报，以及 pair rotation / arbitrage 回测。</p>
+              <div class="actions">
+                <a class="download" href="http://files.dean.wiki/trading-hub_1776581932024.zip">下载</a>
+                <a class="case-button" href="#case-trading">场景用例</a>
               </div>
             </div>
           </article>
@@ -497,6 +522,27 @@
               <li>对这只股票做一份初学者可读的尽调报告。</li>
               <li>检查它的现金流、股息质量和估值是否健康。</li>
               <li>用 NPV、250 日均线和地缘政治情景重新评估它。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="case-trading" class="modal" aria-labelledby="case-trading-title">
+          <div class="modal-panel">
+            <div class="modal-head">
+              <h2 id="case-trading-title">trading hub (crypto视角)：场景用例</h2>
+              <a class="modal-close" href="#skills" aria-label="关闭">×</a>
+            </div>
+            <h3>适合场景</h3>
+            <ul>
+              <li>查看 crypto 市场快照、宏观指标、情绪和 ETF 资金流。</li>
+              <li>做 BTC、ETH 等多周期技术分析，形成入场、止损和止盈判断。</li>
+              <li>测试 pair rotation / arbitrage 策略，比较不同资产强弱。</li>
+            </ul>
+            <h3>用户可以这样问</h3>
+            <ul>
+              <li>给我 BTC 和 ETH 的市场快照、情绪和 ETF 资金流。</li>
+              <li>用 trading hub 对 BTC 做 1h 和 4h 技术分析，给出信号和止损止盈。</li>
+              <li>帮我回测 ETH/BTC 的 pair rotation 策略，看看胜率和收益。</li>
             </ul>
           </div>
         </section>
