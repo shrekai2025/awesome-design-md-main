@@ -186,6 +186,30 @@
         gap: 18px;
       }
 
+      .downloads {
+        margin-top: 42px;
+        padding: 24px 0 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .downloads h2 {
+        margin: 0 0 14px;
+      }
+
+      .download-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .download-row p {
+        margin: 0;
+        color: var(--muted);
+      }
+
       article {
         display: flex;
         min-height: 100%;
@@ -382,6 +406,11 @@
           display: flex;
         }
 
+        .download-row {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
         article img {
           height: auto;
           min-height: 0;
@@ -402,7 +431,7 @@
       <header>
         <h1>投资 Agent Skill 目录</h1>
         <p class="subtitle">为投资研究、价值判断与股票尽调 agent 准备的 skill 下载目录。</p>
-        <p class="updated-at">更新日期：2026-05-24 09:10 +08</p>
+        <p class="updated-at">更新日期：2026-06-09 09:25 +08</p>
       </header>
 
       <main>
@@ -546,6 +575,14 @@
               </div>
             </div>
           </article>
+        </section>
+
+        <section class="downloads" aria-label="资料下载">
+          <h2>资料下载</h2>
+          <div class="download-row">
+            <p>Agent助力的超级个体</p>
+            <a class="download" href="http://files.dean.wiki/Agent助力的超级个体_1780968136371.pdf" target="_blank" rel="noopener">下载 PDF</a>
+          </div>
         </section>
 
         <section id="case-buffett" class="modal" aria-labelledby="case-buffett-title">
